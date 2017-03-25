@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:padding="10dp"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ava"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/makul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ava"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/jam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ava"
+        android:layout_below="@id/makul"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/jam"
+        android:layout_toRightOf="@id/ava"
+        android:id="@+id/star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/star"
+        android:layout_below="@id/jam"
+        android:id="@+id/rate"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:text="5.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:text="Detail"
+        android:id="@+id/button_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ava"
+        android:layout_below="@id/star"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:clickable="true"/>
+
+</RelativeLayout>

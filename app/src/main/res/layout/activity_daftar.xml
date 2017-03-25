@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_daftar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.addev.mysqlmelodic.minebrary.Daftar"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minebrary"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:id="@+id/logo_signup" />
+
+    <LinearLayout
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_signup"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+        <EditText
+            android:layout_weight="0.5"
+            android:id="@+id/nama_depan"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Nama Depan"
+            android:padding="10dp"
+            android:inputType="text"
+            android:layout_width="wrap_content" />
+
+        <EditText
+            android:id="@+id/nama_belakang"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Nama Belakang"
+            android:padding="10dp"
+            android:inputType="text"
+            android:layout_width="168dp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:layout_below="@id/email"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_daftar"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_below="@id/pass"
+        android:text="Daftar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        />
+</RelativeLayout>
